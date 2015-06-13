@@ -137,8 +137,8 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 739px;
-  padding: 5px;
-  margin: 10px 0 10px 0;
+  padding: 0px;
+  margin: 0px 30px 0px 0px;
   border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
@@ -296,7 +296,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 #project_title {
