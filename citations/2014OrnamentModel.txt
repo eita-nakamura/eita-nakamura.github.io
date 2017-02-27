@@ -1,0 +1,6 @@
+E. Nakamura, N. Ono, S. Sagayama, K. Watanabe, "A Stochastic Temporal Model of Polyphonic MIDI Performance with Ornaments," Journal of New Music Research, Vol. 44, No. 4, pp. 287-304, 2015. [arXiv:1404.2314]
+
+\bibitem{2014OrnamentModel}
+E.~Nakamura, N.~Ono, S.~Sagayama and K.~Watanabe,
+``A Stochastic Temporal Model of Polyphonic MIDI Performance with Ornaments,''
+{\it J.\ New Music Res.}, vol.~44, no.~4, pp.~287--304, 2015.
