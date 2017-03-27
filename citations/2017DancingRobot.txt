@@ -1,0 +1,6 @@
+Misato Ohkita, Yoshiaki Bando, Yukara Ikemiya, Eita Nakamura, Katsutoshi Itoyama, Kazuyoshi Yoshii, "Audio-Visual Beat Tracking Based on a State-Space Model for a Robot Dancer Performing with a Human Dancer," Journal of Robotics and Mechatronics, Vol. 29, No. 1, pp. 125-136, 2017.
+
+\bibitem{2017DancingRobot}
+M.~Ohkita, Y.~Bando, Y.~Ikemiya, E.~Nakamura, K.~Itoyama, and K.~Yoshii,
+``Audio-Visual Beat Tracking Based on a State-Space Model for a Robot Dancer Performing with a Human Dancer''
+{\it J.\ Robotics and Mechatronics}, Vol.~29, No.~1, pp.~125--136, 2017.
