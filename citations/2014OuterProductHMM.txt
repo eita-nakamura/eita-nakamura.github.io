@@ -1,6 +1,6 @@
 E. Nakamura, T. Nakamura, Y. Saito, N. Ono, S. Sagayama, "Outer-Product Hidden Markov Model and Polyphonic MIDI Score Following," Journal of New Music Research, Vol. 43, No. 2, pp. 183-201, 2014. [arXiv:1404.2313]
 
 \bibitem{2014OuterProductHMM}
-E.~Nakamura, T.~Nakamura, Y.~Saito, N.~Ono and S.~Sagayama,
+E.~Nakamura, T.~Nakamura, Y.~Saito, N.~Ono, and S.~Sagayama,
 ``Outer-Product Hidden Markov Model and Polyphonic MIDI Score Following,''
 {\it J.\ New Music Res.}, vol.~43, no.~2, pp.~183--201, 2014.

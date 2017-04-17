@@ -3,4 +3,4 @@ E. Nakamura, K. Yoshii, S. Sagayama, "Rhythm Transcription of Polyphonic Piano M
 \bibitem{2017PolyphonicRhythmTranscription}
 E.~Nakamura, K.~Yoshii, and S.~Sagayama,
 ``Rhythm Transcription of Polyphonic Piano Music Based on Merged-Output HMM for Multiple Voices,''
-{\it IEEE/ACM TASLP}, Vol.~25, No.~4, pp.~794--806, 2017
+{\it IEEE/ACM TASLP}, Vol.~25, No.~4, pp.~794--806, 2017.

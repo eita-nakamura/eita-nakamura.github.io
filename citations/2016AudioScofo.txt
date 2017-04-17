@@ -1,6 +1,6 @@
 T. Nakamura, E. Nakamura, S. Sagayama, "Real-Time Audio-to-Score Alignment of Music Performances Containing Errors and Arbitrary Repeats and Skips," IEEE/ACM Transactions on Audio, Speech and Language Processing, Vol. 24, No. 2, pp. 329-339, 2016. [arXiv:1512.07748]
 
 \bibitem{2016AudioScofo}
-T.~Nakamura, E.~Nakamura and S.~Sagayama,
+T.~Nakamura, E.~Nakamura, and S.~Sagayama,
 ``Real-Time Audio-to-Score Alignment of Music Performances Containing Errors and Arbitrary Repeats and Skips,''
 {\it IEEE/ACM TASLP}, vol.~24, no.~2, pp.~329--339, 2016.
