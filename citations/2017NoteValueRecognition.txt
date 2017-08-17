@@ -3,4 +3,14 @@ E. Nakamura, K. Yoshii, S. Dixon, "Note Value Recognition for Piano Transcriptio
 \bibitem{2017NoteValueRecognition}
 E.~Nakamura, K.~Yoshii, and S.~Dixon,
 ``Note Value Recognition for Piano Transcription Using Markov Random Fields,''
-{\it IEEE/ACM TASLP}, to appear, 2017.
+{\it IEEE/ACM TASLP}, Vol. 25, No. 9, pp. 1542-1554, 2017.
+
+@article{2017NoteValueRecognition,
+author = "E.~Nakamura and K.~Yoshii and S.~Dixon",
+title = "Note Value Recognition for Piano Transcription Using Markov Random Fields",
+journal = "IEEE/ACM TASLP",
+volume = 25,
+number = 9,
+pages = "1542--1554",
+year = 2017,
+}
