@@ -1,4 +1,4 @@
-E. Nakamura, K. Yoshii, S. Dixon, "Note Value Recognition for Piano Transcription Using Markov Random Fields," IEEE/ACM Transactions on Audio, Speech and Language Processing, to appear, 2017. [arXiv:1703.08144]
+E. Nakamura, K. Yoshii, S. Dixon, "Note Value Recognition for Piano Transcription Using Markov Random Fields," IEEE/ACM Transactions on Audio, Speech and Language Processing, 25(7), pp. 1542-1554, 2017. [arXiv:1703.08144]
 
 \bibitem{2017NoteValueRecognition}
 E.~Nakamura, K.~Yoshii, and S.~Dixon,
