@@ -139,7 +139,7 @@ img {
   max-width: 739px;
   padding: 0px;
   margin: 0px 30px 0px 0px;
-  border: 1px solid #ebebeb;
+  border: 0px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
@@ -162,11 +162,11 @@ a img {
   padding: 0px;
   margin: 0px 0px 0px 0px;
   vertical-align: bottom;
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+  box-shadow: 0 0 5px #ffffff;
+  -webkit-box-shadow: 0 0 5px #ffffff;
+  -moz-box-shadow: 0 0 5px #ffffff;
+  -o-box-shadow: 0 0 5px #ffffff;
+  -ms-box-shadow: 0 0 5px #ffffff;
 }
 
 pre, code {
