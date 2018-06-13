@@ -1,0 +1,17 @@
+K. Itakura, Y. Bando, E. Nakamura, K. Itoyama, K. Yoshii, T. Kawahara, "Bayesian Multichannel Audio Source Separation Based on Integrated Source and Spatial Models," IEEE/ACM Transactions on Audio, Speech and Language Processing, 26(4), pp. 1–16, 2018.
+
+\bibitem{2018BayesianMNMF}
+K.~Itakura, Y.~Bando, E.~Nakamura, K.~Itoyama, K.~Yoshii, and T.~Kawahara,
+``Bayesian Multichannel Audio Source Separation Based on Integrated Source and Spatial Models,''
+{\it IEEE/ACM TASLP}, Vol.~26, No.~4, pp.~1--16, 2018.
+
+@article{2018BayesianMNMF,
+author = "K.~Itakura and Y.~Bando and E.~Nakamura and K.~Itoyama and K.~Yoshii and T.~Kawahara",
+title = "Bayesian Multichannel Audio Source Separation Based on Integrated Source and Spatial Models",
+journal = "IEEE/ACM TASLP",
+volume = 26,
+number = 4,
+pages = "1--16",
+year = 2018,
+}
+
