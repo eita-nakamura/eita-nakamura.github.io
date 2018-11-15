@@ -1,0 +1,17 @@
+H. Tsushima, E. Nakamura, K. Itoyama, K. Yoshii, "Generative Statistical Models with Self-Emergent Grammar of Chord Sequences," Vol. 47, No. 3, pp. 226–248, 2018. [arXiv:1708.02255]
+
+\bibitem{2018ChordModel}
+H.~Tsushima, E.~Nakamura, K.~Itoyama, and K.~Yoshii,
+``Generative Statistical Models with Self-Emergent Grammar of Chord Sequences,''
+{\it J.\ New Music Res.}, Vol.~47, No.~3, pp.~226--248, 2018.
+
+@article{2018ChordModel,
+author = "H.~Tsushima and E.~Nakamura and K.~Itoyama and K.~Yoshii",
+title = "Generative Statistical Models with Self-Emergent Grammar of Chord Sequences",
+journal = JNMR,
+volume = 47,
+number = "3",
+pages = "226--248",
+year = 2018,
+}
+
