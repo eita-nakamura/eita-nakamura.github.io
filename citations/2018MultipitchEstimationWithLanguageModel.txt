@@ -1,0 +1,16 @@
+Y. Ojima, E. Nakamura, K. Itoyama, K. Yoshii, "Chord-Aware Automatic Music Transcription Based on Hierarchical Bayesian Integration of Acoustic and Language Models," APSIPA Trans. on Signal and Information Processing, Vol. 7, No. e14, pp. 1–14, 2018.
+
+\bibitem{2018MultipitchEstimationWithLanguageModel}
+Y.~Ojima, E.~Nakamura, K.~Itoyama, and K.~Yoshii,
+``Chord-Aware Automatic Music Transcription Based on Hierarchical Bayesian Integration of Acoustic and Language Models,''
+{\it APSIPA Trans.\ Signal and Information Processing}, Vol.~7, No.~e14, pp.~1--14, 2018.
+
+@article{2018MultipitchEstimationWithLanguageModel,
+author = "Y.~Ojima and E.~Nakamura and K.~Itoyama and K.~Yoshii",
+title = "Chord-Aware Automatic Music Transcription Based on Hierarchical Bayesian Integration of Acoustic and Language Models",
+journal = "APSIPA Trans.\ Signal and Information Processing",
+volume = 7,
+number = "e14",
+pages = "1--14",
+year = 2018,
+}

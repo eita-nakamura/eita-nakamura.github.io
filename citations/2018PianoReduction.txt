@@ -1,4 +1,4 @@
-E. Nakamura, K. Yoshii, "Statistical Piano Reduction Controlling Performance Difficulty," Vol. 7, No. e13, pp. 1-12, 2018. [arXiv:1808.05006]
+E. Nakamura, K. Yoshii, "Statistical Piano Reduction Controlling Performance Difficulty," APSIPA Trans. Signal and Inf. Processing, Vol. 7, No. e13, pp. 1-12, 2018. [arXiv:1808.05006]
 
 \bibitem{2018PianoReduction}
 E.~Nakamura and K.~Yoshii,
