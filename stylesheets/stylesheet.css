@@ -103,7 +103,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #000090;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -136,7 +136,7 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 1100px;
   padding: 0px;
   margin: 0px 30px 0px 0px;
   border: 0px solid #ebebeb;
@@ -278,7 +278,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 920px;
+  max-width: 1000px;
   padding: 20px 10px;
   margin: 0 auto;
 }
