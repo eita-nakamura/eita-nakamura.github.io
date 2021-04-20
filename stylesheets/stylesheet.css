@@ -6,6 +6,46 @@ by Jason Costello, @jsncostello
 @import url(github-light.css);
 
 /*******************************************************************************
+My Styles
+*******************************************************************************/
+
+.MyBtn {
+  display: inline-block;
+  margin: 0px;
+
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  vertical-align: bottom;
+
+  line-height: 1.1;
+  padding: 0.25em 0.8em;
+  background: transparent;
+
+  cursor: pointer;
+  user-select: none;
+
+  border-radius: 2em;
+  border-style: none;
+  outline: none;
+}
+
+.GreenBtn {
+  background-color: #52C11F;
+  background-image: linear-gradient(0deg, #3f9518, #7be24b);
+}
+
+.PinkBtn {
+  background-color: #ff6161;
+  background-image: linear-gradient(0deg, #ff4747, #ffadad);
+}
+
+.BlueBtn {
+  background-color: #2e82ff;
+  background-image: linear-gradient(0deg, #1472ff, #7aafff);
+}
+
+/*******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
 
