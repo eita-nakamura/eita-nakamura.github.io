@@ -8,6 +8,28 @@ let outputChordProgression=''
 let playedNotes=[]//playedChords=[['C4,0,0.5],['E4,0,0.5],['G4,0.5,1]] etc. 1=QN
 let BPM=120.;
 
+
+class MIDIStrEvt{
+	constructor(){
+		this.time = 0;//msec単位
+		this.pitch = 0;//
+		this.channel = 0;
+		this.onoff = 0;//0=on, 1=off
+		this.vel = 80;//
+	}
+}//endclass MIDIStrEvt
+
+function CompareMIDIStrEvt(a,b){
+	if(a.time<b.time){return -1;
+	}else if(a.time>b.time){return 1;
+	}else if(a.onoff>b.onoff){return -1;
+	}else if(a.onoff<b.onoff){return 1;
+	}else{return 0;
+	}//endif
+}//end CompareMIDIStrEvt
+//midiStrEvts.sort(CompareMIDIStrEvt)
+
+
 $("#keyInput").keyup(function(e){
 	if(e.keyCode==16 || (e.keyCode>=37 && e.keyCode<=40)){return;}
 	let key=$("#keyInput").val();
@@ -161,9 +183,10 @@ function SetOutput(){
 		}//endfor k
 	}//endfor m
 
+	SetListenButton();
+
 }//end SetOutput
 
-SetListenButton();
 
 var synthOption = {
   oscillator: {
@@ -179,35 +202,73 @@ var synthOption = {
 
 
 function SetListenButton(){
-	var synth = new Tone.PolySynth(10).toMaster();
-	document.getElementById('listenButton').addEventListener('click', function(event) {
-		console.log('clicked');
-		var now = Tone.now();
-		for(let i=0,end=playedNotes.length;i<end;i+=1){
-			synth.triggerAttackRelease(playedNotes[i][0],(playedNotes[i][2]-playedNotes[i][1])*60./BPM ,now+playedNotes[i][1]*60./BPM);
-		}//endfor i
-	});
+
+// 	var synth = new Tone.PolySynth(10).toMaster();
+// 	document.getElementById('listenButton').addEventListener('click', function(event) {
+// 		console.log('clicked');
+// 		var now = Tone.now();
+// 		for(let i=0,end=playedNotes.length;i<end;i+=1){
+// 			synth.triggerAttackRelease(playedNotes[i][0],(playedNotes[i][2]-playedNotes[i][1])*60./BPM ,now+playedNotes[i][1]*60./BPM);
+// 		}//endfor i
+// 	});
+
+	midiStrEvts=[];
+	for(let i=0,end=playedNotes.length;i<end;i+=1){
+		let midiStrEvt=new MIDIStrEvt();
+		midiStrEvt.time=playedNotes[i][1]*60000./BPM;
+		midiStrEvt.pitch=SitchToPitch(playedNotes[i][0]);
+		midiStrEvt.vel=80;
+		midiStrEvt.channel=0;
+		midiStrEvt.onoff=0;
+		midiStrEvts.push(midiStrEvt);
+		let midiStrEvt_=new MIDIStrEvt();
+		midiStrEvt_.time=playedNotes[i][2]*60000./BPM;
+		midiStrEvt_.pitch=SitchToPitch(playedNotes[i][0]);
+		midiStrEvt_.vel=80;
+		midiStrEvt_.channel=0;
+		midiStrEvt_.onoff=1;
+		midiStrEvts.push(midiStrEvt_);
+	}//endfor i
+
+	midiStrEvts.sort(CompareMIDIStrEvt);
+
+	ABCJS.renderMidi("midi", "" ,{qpm:120},{generateDownload: false, generateInline: true });
+	let str='[';
+	str+='[{"ticksToEvent":0,"track":1,"event":{"channel":0,"deltaTime":0,"programNumber":'+document.getElementById('instrumentsList').value+',"subtype":"programChange","type":"channel"}},0]';
+	for(let n=0;n<midiStrEvts.length;n+=1){
+		if(midiStrEvts[n].onoff==0){
+			str+=',[{"ticksToEvent":0,"track":'+(midiStrEvts[n].channel+1)+',"event":{"deltaTime":0,"channel":'+midiStrEvts[n].channel+',"type":"channel","noteNumber":'+midiStrEvts[n].pitch+',"velocity":'+midiStrEvts[n].vel+',"subtype":"noteOn"}},';
+		}else{
+			str+=',[{"ticksToEvent":0,"track":'+(midiStrEvts[n].channel+1)+',"event":{"deltaTime":0,"channel":'+midiStrEvts[n].channel+',"type":"channel","noteNumber":'+midiStrEvts[n].pitch+',"velocity":'+midiStrEvts[n].vel+',"subtype":"noteOff"}},';
+		}//endif
+		if(n==0){
+			str+='0]';
+		}else{
+			str+=(midiStrEvts[n].time-midiStrEvts[n-1].time)+']';
+		}//endif
+	}//endfor n
+	str+=']';
+
+//console.log(str);
+
+	document.getElementsByClassName('abcjs-data')[0].textContent=str;
 
 }//end SetListenButton
 
-$("#listenSpeed").keyup(function(){
-	BPM=Number($("#listenSpeed").val());
+
+document.getElementById('labelForListen').addEventListener('click', function(event){
+	console.log('clicked',document.getElementById('instrumentsList').value)
+//	console.log(document.querySelector('[title="Click to play/pause."]'));
+	document.querySelector('[title="Click to play/pause."]').click();
 });
 
+$("#listenSpeed").keyup(function(){
+	BPM=Number($("#listenSpeed").val());
+	SetListenButton()
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$("#instrumentsList").change(function(){
+	SetListenButton()
+});
 
 
