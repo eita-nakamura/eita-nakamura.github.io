@@ -12,6 +12,59 @@
     <style>
       ul.pub {line-height: 20px;}
       ul.pub li {margin-bottom: 10px;}
+
+
+.msr_newslist01 li {
+  width: 90%;
+  border-bottom: 1px solid #AAAAAA;
+  font-size: 14px;
+  list-style-type: none;
+}
+.msr_newslist01 li a {
+  box-sizing: border-box;
+  color: #000000;
+  display: table;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  width: 100%;
+}
+.msr_newslist01 li a:hover {
+  background: #EEEEEE;
+  text-decoration: none;
+}
+.msr_newslist01 li div {
+  display: table-cell;
+  width: 144px;
+  vertical-align: middle;
+}
+.msr_newslist01 li p {
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/* 時間の設定 */
+ul.msr_newslist01 li time {
+  display: table-cell;
+  vertical-align: top;
+  width: 90px;
+}
+
+/* カテゴリの設定 */
+.msr_newslist01 li .cat01 {
+  background-color: #143958;
+  border-radius: 1px;
+  color: #FFFFFF;
+  font-size: 9px;
+  padding: 0 2px;
+  text-align: center;
+  width: 50px;
+}
+
     </style>
 
     <script>
@@ -51,6 +104,47 @@
           <a href="https://eita-nakamura.github.io/eita-nakamura_cv-ja.html"><strong>略歴</strong></a><br>
         </div><br>
         </div><br>
+
+        <h4>お知らせ</h4>
+        <ul class="msr_newslist01">
+          <li></li>
+          <li>
+            <a href="https://www.chain.hokudai.ac.jp/CES2020/" target="_blank">
+            <div>
+              <time datetime="2021-6-9">2021/06/09</time>
+              <p class="cat01">発表</p>
+            </div>
+            <p>CES (Cultural Evolution Society) Conference 2021で講演を行います。“Statistical-learning-based model of cultural evolution and conjugate distribution laws in music data”</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://creevo-music.com" target="_blank">
+            <div>
+              <time datetime="2021-5-3">2021/05/03</time>
+              <p class="cat01">公開</p>
+            </div>
+            <p>進化する自動作曲システム「CREEVO」を公開しました。入力した歌詞に対して、多様なスタイルのメロディーを自動作曲できます。機能などは逐次更新していきます。</p><figure src="float: right;"><img src="https://eita-nakamura.github.io/images/logo_mono_v_compact_green.png" height="80px" alt="" style="top:0px; box-shadow: 0 0 0px #ebebeb; margin: 0px 0px 0px 10px; border: none;"></figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://audio2score.github.io/index-ja.html" target="_blank">
+            <div>
+              <time datetime="2021-3-26">2021/03/26</time>
+              <p class="cat01">論文</p>
+            </div>
+            <p>自動採譜に関する論文 “Non-local musical statistics as guides for audio-to-score piano transcription” がInformation Sciences誌から出版されました。</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://beam.kisarazu.ac.jp/~saito/research/PianoFingeringDataset/index-ja.html" target="_blank">
+            <div>
+              <time datetime="2019-6-29">2019/06/29</time>
+              <p class="cat01">公開</p>
+            </div>
+            <p>ピアノ運指データセット「PIGデータセット」を公開しました。学術目的であれば、登録をするだけで無償で利用できます。</p><figure src="float: right;"><img src="https://eita-nakamura.github.io/images/PIGDatasetLogo-1.png" height="80px" alt="" style="top:0px; box-shadow: 0 0 0px #ebebeb; margin: 0px 0px 0px 10px; border: none;"></figure>
+            </a>
+          </li>
+        </ul>
 
         <h3>研究の興味</h3>
         <ul>
@@ -207,7 +301,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Maintained by Eita Nakamura　　　　(最終更新: 2021年5月)　　<img src="https://www.f-counter.net/j/31/1553852125/" alt="アクセスカウンター"></p>
+        <p class="copyright">Maintained by Eita Nakamura　　　　(最終更新: 2021年6月)　　<img src="https://www.f-counter.net/j/31/1553852125/" alt="アクセスカウンター"></p>
       </footer>
     </div>
 
