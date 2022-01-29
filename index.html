@@ -12,6 +12,59 @@
     <style>
       ul.pub {line-height: 20px;}
       ul.pub li {margin-bottom: 10px;}
+
+
+.msr_newslist01 li {
+  width: 90%;
+  border-bottom: 1px solid #AAAAAA;
+  font-size: 14px;
+  list-style-type: none;
+}
+.msr_newslist01 li a {
+  box-sizing: border-box;
+  color: #000000;
+  display: table;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  width: 100%;
+}
+.msr_newslist01 li a:hover {
+  background: #EEEEEE;
+  text-decoration: none;
+}
+.msr_newslist01 li div {
+  display: table-cell;
+  width: 164px;
+  vertical-align: middle;
+}
+.msr_newslist01 li p {
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/* 時間の設定 */
+ul.msr_newslist01 li time {
+  display: table-cell;
+  vertical-align: top;
+  width: 90px;
+}
+
+/* カテゴリの設定 */
+.msr_newslist01 li .cat01 {
+  background-color: #143958;
+  border-radius: 1px;
+  color: #FFFFFF;
+  font-size: 9px;
+  padding: 0 2px;
+  text-align: center;
+  width: 70px;
+}
+
     </style>
 
     <script>
@@ -51,6 +104,48 @@
           <a href="https://eita-nakamura.github.io/eita-nakamura_cv.html"><strong>Curriculum Vitae</strong></a><br>
         </div><br>
         </div><br>
+
+        <h3>News</h3>
+        <ul class="msr_newslist01">
+          <li></li>
+          <li>
+            <a href="https://www.kyoto-u.ac.jp/en/research-news/2022-01-26" target="_blank">
+            <div>
+              <time datetime="2022-1-26">26/Jan/2021</time>
+              <p class="cat01">Release</p>
+            </div>
+            <p>“If you can't score music, just beat it.” An article on piano transcription is released on the Kyoto University webpage.</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://creevo-music.com" target="_blank">
+            <div>
+              <time datetime="2021-5-3">03/May/2021</time>
+              <p class="cat01">Web system</p>
+            </div>
+            <p>CREEVO, an evolutionary system of automatic composition, is open now. Melodies of a variety of styles can be generated for Japanese lyrics users input. This is a piece of ongoing work.</p><figure src="float: right;"><img src="https://eita-nakamura.github.io/images/logo_mono_v_compact_green.png" height="80px" alt="" style="top:0px; box-shadow: 0 0 0px #ebebeb; margin: 0px 0px 0px 10px; border: none;"></figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://audio2score.github.io/index-ja.html" target="_blank">
+            <div>
+              <time datetime="2021-3-26">26/Mar/2021</time>
+              <p class="cat01">Paper</p>
+            </div>
+            <p>Our paper “Non-local musical statistics as guides for audio-to-score piano transcription” is published in Information Sciences.</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://beam.kisarazu.ac.jp/~saito/research/PianoFingeringDataset/index.html" target="_blank">
+            <div>
+              <time datetime="2019-6-29">29/June/2019</time>
+              <p class="cat01">Dataset</p>
+            </div>
+            <p>PIG (piano fingering) dataset is published. The dataset is freely available for research purposes.</p><figure src="float: right;"><img src="https://eita-nakamura.github.io/images/PIGDatasetLogo-1.png" height="80px" alt="" style="top:0px; box-shadow: 0 0 0px #ebebeb; margin: 0px 0px 0px 10px; border: none;"></figure>
+            </a>
+          </li>
+        </ul>
+
 
         <h3>Research Interests</h3>
         <ul>
@@ -125,7 +220,7 @@
         <ul class="pub">
 
 
-          <h5><font color="#990000">2021</font></h5>
+          <h5><font color="#990000">2021 and later</font></h5>
 
 <li>Eita Nakamura<br>
 <strong><a href="https://arxiv.org/pdf/2102.01465.pdf" target="_blank"><font color="#222222">Conjugate Distribution Laws in Cultural Evolution via Statistical Learning</font></a></strong> <a href="https://arxiv.org/pdf/2102.01465.pdf" target="_blank"><img src="https://eita-nakamura.github.io/images/pdf.png" height="18px" alt=""></a> <a href="https://doi.org/10.1103/PhysRevE.104.034309" target="_blank"><img src="https://eita-nakamura.github.io/images/externallink.png" height="18px" alt=""></a><br>
@@ -209,7 +304,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Maintained by Eita Nakamura　　　　(Last updated: Dec 2021)　　<img src="https://www.f-counter.net/j/46/1625719768/" alt="access counter"></p>
+        <p class="copyright">Maintained by Eita Nakamura　　　　(Last updated: Jan 2022)　　<img src="https://www.f-counter.net/j/46/1625719768/" alt="access counter"></p>
       </footer>
     </div>
 
