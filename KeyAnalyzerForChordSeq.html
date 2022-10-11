@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Key Analyzer</title>
+</head>
+
+
+<body>
+	<style>
+		body {
+			font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+			font-size:14pt;
+		}
+
+		#labelForFilein1{
+			text-align: center;
+			vertical-align: middle;
+			background-color: rgba(20,20,20,0.1);
+			border-radius: 5px;
+			line-height:25px;
+		}
+		#labelForFilein1:hover{
+			background-color: rgba(20,20,20,1);
+			color: white;
+		}
+		#labelForFilein1:active{
+			background-color: rgba(20,20,150,1);
+			color: white;
+		}
+
+	</style>
+
+	<div style="position:relative; left:110px; top:30px;">
+		<h3>Key Analyzer for Chord Sequences</h3>
+	</div>
+
+	<div style="height:60px;"></div>
+
+	<div>
+		<div style="position:relative; left:110px; padding:10px;"><font color="#555555">Input chord symbols</font></div>
+		<textarea id="inputTextZone" onfocus="this.select();" style="position:relative; left:110px; width:500px; height:200px; font-size:14pt; padding:10px;" placeholder="Please write here a chord sequence (ex. C G7 Am Em)"></textarea>
+	</div>
+
+<!-- 	<div style="height:20px;"></div> -->
+	<div id="infoDisplay" style="position:relative; left:110px; padding:10px;"></div>
+
+	<div id="scrollBox3" style="position:relative; left:110px; height:20px;">
+		<div id="keyDisplayZone" style="position:relative; padding-left:20px;"></div>
+	</div>
+
+	<div style="height:20px;"></div>
+
+	<div style="position:relative; left:110px; padding:10px;"><font color="#555555">Interpreted chord sequence</font></div>
+	<div id="scrollBox" style="position:relative; left:110px; top:10px; height:300px; overflow: scroll; border:1px solid rgb(200,200,200);">
+		<div id="display" style="position:relative; padding:10px;">
+			Result of key analysis will be displayed here.
+		</div>
+	</div>
+
+	<div style="position:relative;height:20px;"></div>
+
+	<div style="position:relative; left:110px; padding:10px;"><font color="#555555">Key-relative chord sequence</font></div>
+	<div id="scrollBox2" style="position:relative; left:110px; top:10px; height:300px; overflow: scroll; border:1px solid rgb(200,200,200);">
+		<div id="displayRel" style="position:relative; padding:10px;">
+			Key-relative chord sequence will be displayed here.
+		</div>
+	</div>
+
+	<div style="position:relative;height:40px;"></div>
+
+	<script src="KeyAnalyzerForChordSeqScript/jquery.js"></script>
+	<script src="KeyAnalyzerForChordSeqScript/param_ChordBigram.js"></script>
+	<script src="KeyAnalyzerForChordSeqScript/BasicPitchCalculation.js"></script>
+	<script src="KeyAnalyzerForChordSeqScript/KeyAnalyzerForChordSeq.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			history.pushState(null, null, null);
+			$(window).on("popstate", function(){
+				history.pushState(null, null, null);
+			});
+		});
+	</script>
+
+</body>
+
+</html>
