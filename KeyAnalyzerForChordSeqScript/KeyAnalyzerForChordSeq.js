@@ -221,7 +221,7 @@ function SetDisplay(){
 	let str=''
 	for(let q=0;q<12;q++){
 		if(countTonic[q][1]==0){continue;}
-		str+='<font color="'+colorList[q]+'">'+PitchClassToSitchClass(countTonic[q][0])+' major/'+PitchClassToSitchClass((countTonic[q][0]+9)%12)+' minor ('+String(TonicToKeyDegree(countTonic[q][0]))+')'+'</font><br>';
+		str+='<font color="'+colorList[q]+'">'+PitchClassToSitchClass(countTonic[q][0])+' major/'+PitchClassToSitchClass((countTonic[q][0]+9)%12)+' minor ['+String(Math.abs(TonicToKeyDegree(countTonic[q][0])))+' '+((TonicToKeyDegree(countTonic[q][0])>0)? "sharps":"flats")+'] ('+String(countTonic[q][1])+' chords)'+'</font><br>';
 	}//endfor q
 	document.getElementById('keyDisplayZone').innerHTML=str;
 
