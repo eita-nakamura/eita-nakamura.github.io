@@ -174,7 +174,7 @@ function EstimateKey(){
 						amaxHist[l][q]=qp;
 					}//endif
 				}//endfor qp
-				LP[q]+=biProb[prePos[q]][curPos[q]];
+				LP[q]+=biProb[prePos[q]][curPos[q]]+0.1*uniProb[curPos[q]];
 				prePos[q]=curPos[q];
 			}//endfor q
 		}//endif
