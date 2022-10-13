@@ -29,6 +29,8 @@ function SetBoxSize(){
 	document.getElementById('scrollBox3').style.width=(window.innerWidth-220)+'px';
 	document.getElementById('keyDisplayZone').style.width=(window.innerWidth-220)+'px';
 	document.getElementById('inputTextZone').style.width=(window.innerWidth-240)+'px';
+	document.getElementById('infoDisplay').style.width=(window.innerWidth-220)+'px';
+	
 }//end SetBoxSize
 
 function ReadParam(in_str){
@@ -106,26 +108,29 @@ function ParseInputText(){
 		for(let j=0;j<parsedInputText[i].length;j++){
 			if(parsedInputText[i][j]==''){continue;}
 			if(spacePattern.test(parsedInputText[i][j])){continue;}
+			parsedInputText[i][j] = parsedInputText[i][j].charAt(0).toUpperCase() + parsedInputText[i][j].slice(1)
 			symPosList.push([i,j]);
 			chordSymbPos.push(String(i)+'-'+String(j))
 		}//endfor j
 	}//endfor i
 
-	let unknownChordPos = -1
+	let badRootPos = -1
 	chordList=[];
 	for(let l=0;l<symPosList.length;l++){
-		chordList.push( new ChordSymbol(parsedInputText[symPosList[l][0]][symPosList[l][1]]) )
-		if(chordList[l].unknown>0){
-			unknownChordPos=l;
+		chordList.push( new ChordSymbol(parsedInputText[symPosList[l][0]][symPosList[l][1]]) );
+		if(SitchClassToPitchClass(chordList[l].root)<0){
+			badRootPos=l;
 			break;
 		}//endif
 	}//endfor l
 //console.log(chordList);
 
-	if(unknownChordPos>-1){
-		let str='<font color="#d91e4f">Unknown chord:<br><br>';
-		str+='　<strong>'+parsedInputText[symPosList[unknownChordPos][0]][symPosList[unknownChordPos][1]]+'</strong><br><br>';
-		str+='Please fix.</font>';
+	if(badRootPos>-1){
+		let str='<font color="#d91e4f">Chord symbol error:<br><br>';
+		str+='　<strong>'+parsedInputText[symPosList[badRootPos][0]][symPosList[badRootPos][1]]+'</strong><br><br>';
+		str+='Please start with a root note (A-G or a-g)</font><br><br>';
+		str+='Recognizable chord types: C, Cm, C7, Cdim, Caug, Cm7, CM7, CmM7, Cm7(b5), Caug7, Cdim7, Csus4, C6, C9, CM9, Cm9, C(add9), C7sus4<br><br>';
+		str+='Examples: Cm Ab7 F#dim7 bm bbdim g7 Cmaj7';
 		document.getElementById('infoDisplay').innerHTML=str;
 		document.getElementById('keyDisplayZone').innerHTML='';
 		return -1;
