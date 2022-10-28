@@ -202,7 +202,7 @@ var synthOption = {
 
 function SetListenButton(){
 
-	var synth = new Tone.PolySynth(10).toMaster();
+	var synth = new Tone.PolySynth(synthOption).toMaster();
 	document.getElementById('labelForListen').addEventListener('click', function(event) {
 		console.log('clicked');
 		var now = Tone.now();
