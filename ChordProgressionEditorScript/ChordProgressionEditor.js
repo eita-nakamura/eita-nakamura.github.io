@@ -207,7 +207,7 @@ function SetListenButton(){
 		console.log('clicked');
 		var now = Tone.now();
 		for(let i=0,end=playedNotes.length;i<end;i+=1){
-			synth.triggerAttackRelease(playedNotes[i][0],(playedNotes[i][2]-playedNotes[i][1])*60./BPM-0.1 ,now+playedNotes[i][1]*60./BPM);
+			synth.triggerAttackRelease(playedNotes[i][0],(playedNotes[i][2]-playedNotes[i][1])*60./BPM-0.1 ,now+playedNotes[i][1]*60./BPM,0.1);
 		}//endfor i
 	});
 
